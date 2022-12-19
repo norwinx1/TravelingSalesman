@@ -1,4 +1,7 @@
+package ch.bbw;
+
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class City {
     private int id;
@@ -40,6 +43,11 @@ public class City {
     }
 
     public void removeRoute(Route route) {
+        routes.remove(route);
+    }
 
+    @Override
+    public String toString() {
+        return id + " " + name + " [" + routes.stream().map(Object::toString).collect(Collectors.joining(", ")) + "]";
     }
 }

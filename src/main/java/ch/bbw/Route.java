@@ -1,3 +1,5 @@
+package ch.bbw;
+
 public class Route {
     private long length;
     private int destinationId;
@@ -21,5 +23,10 @@ public class Route {
 
     public void setDestination(int destination) {
         this.destinationId = destination;
+    }
+
+    @Override
+    public String toString() {
+        return destinationId + " " + length;
     }
 }
