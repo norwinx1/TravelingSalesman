@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Travel.java" afterDir="false" />
+    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="changed data structure to coordinates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Travel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,8 +105,16 @@
       <workItem from="1671460279524" duration="4445000" />
       <workItem from="1673246301487" duration="85000" />
       <workItem from="1673246473988" duration="22000" />
-      <workItem from="1673246518010" duration="3431000" />
+      <workItem from="1673246518010" duration="4626000" />
     </task>
+    <task id="LOCAL-00001" summary="changed data structure to coordinates">
+      <created>1673250043908</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673250043908</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,9 +123,21 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="changed data structure to coordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed data structure to coordinates" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,7 +11,11 @@ public class Travel {
     }
 
     private int generateRandomIndex() {
-        return (int) (Math.random() * travel.size());
+        int r = 0;
+        while (r == 0) {
+            r = (int) (Math.random() * travel.size());
+        }
+        return r;
     }
 
     public void swapCities() {
@@ -28,23 +32,19 @@ public class Travel {
         travel = previousTravel;
     }
 
-    public int getDistance(int startId) {
+    public int getDistance() {
         int distance = 0;
         for (int index = 0; index < travel.size(); index++) {
-            City starting = findCity(startId);
+            City starting = travel.get(index);
             City destination;
             if (index + 1 < travel.size()) {
                 destination = travel.get(index + 1);
             } else {
-                destination = findCity(startId);
+                destination = travel.get(0);
             }
             distance += starting.distanceToCity(destination);
         }
         return distance;
-    }
-
-    public City findCity(int id) {
-        return travel.stream().filter(x -> x.getId() == id).findFirst().get();
     }
 
     @Override
