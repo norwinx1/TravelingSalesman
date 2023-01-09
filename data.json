@@ -2,123 +2,43 @@
   {
     "id": 1,
     "name": "Zürich",
-    "routes": [
-      {
-        "length": 767,
-        "destinationId": 2
-      },
-      {
-        "length": 14,
-        "destinationId": 5
-      },
-      {
-        "length": 23,
-        "destinationId": 4
-      }
-    ]
+    "x": 1,
+    "y": 1
   },
   {
     "id": 2,
     "name": "Berlin",
-    "routes": [
-      {
-        "length": 767,
-        "destinationId": 1
-      },
-      {
-        "length": 15,
-        "destinationId": 3
-      },
-      {
-        "length": 1000,
-        "destinationId": 6
-      }
-    ]
+    "x": 1000,
+    "y": 1000
   },
   {
     "id": 3,
     "name": "Spandau",
-    "routes": [
-      {
-        "length": 15,
-        "destinationId": 2
-      },
-      {
-        "length": 998,
-        "destinationId": 6
-      }
-    ]
+    "x": 908,
+    "y": 977
   },
   {
     "id": 4,
     "name": "Winterthur",
-    "routes": [
-      {
-        "length": 23,
-        "destinationId": 1
-      },
-      {
-        "length": 143,
-        "destinationId": 7
-      }
-    ]
+    "x": 50,
+    "y": 100
   },
   {
     "id": 5,
     "name": "Lufingen",
-    "routes": [
-      {
-        "length": 14,
-        "destinationId": 1
-      },
-      {
-        "length": 359,
-        "destinationId": 6
-      },
-      {
-        "length": 147,
-        "destinationId": 7
-      }
-    ]
+    "x": 75,
+    "y": 13
   },
   {
     "id": 6,
     "name": "Magadino-Vira",
-    "routes": [
-      {
-        "length": 998,
-        "destinationId": 3
-      },
-      {
-        "length": 1000,
-        "destinationId": 2
-      },
-      {
-        "length": 359,
-        "destinationId": 5
-      },
-      {
-        "length": 237,
-        "destinationId": 7
-      }
-    ]
+    "x": 320,
+    "y": 270
   },
   {
     "id": 7,
     "name": "Arosa",
-    "routes": [
-      {
-        "length": 143,
-        "destinationId": 4
-      },
-      {
-        "length": 147,
-        "destinationId": 5
-      },
-      {
-        "length": 237,
-        "destinationId": 6
-      }
-    ]
+    "x": 400,
+    "y": 105
   }
 ]

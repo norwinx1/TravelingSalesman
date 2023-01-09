@@ -1,17 +1,16 @@
 package ch.bbw;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class City {
     private int id;
     private String name;
-    private List<Route> routes;
+    private int x;
+    private int y;
 
-    public City(int id, String name, List<Route> routes) {
+    public City(int id, String name, int x, int y) {
         this.id = id;
         this.name = name;
-        this.routes = routes;
+        this.x = x;
+        this.y = y;
     }
 
     public int getId() {
@@ -30,24 +29,30 @@ public class City {
         this.name = name;
     }
 
-    public List<Route> getRoutes() {
-        return routes;
+    public int getX() {
+        return x;
     }
 
-    public void setRoutes(List<Route> routes) {
-        this.routes = routes;
+    public void setX(int x) {
+        this.x = x;
     }
 
-    public void addRoute(Route route) {
-        routes.add(route);
+    public int getY() {
+        return y;
     }
 
-    public void removeRoute(Route route) {
-        routes.remove(route);
+    public void setY(int y) {
+        this.y = y;
     }
 
     @Override
     public String toString() {
-        return id + " " + name + " [" + routes.stream().map(Object::toString).collect(Collectors.joining(", ")) + "]";
+        return id + " " + name + " [" + x + ", " + y + "]";
+    }
+
+    public double distanceToCity(City city) {
+        int x = Math.abs(getX() - city.getX());
+        int y = Math.abs(getY() - city.getY());
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 }
