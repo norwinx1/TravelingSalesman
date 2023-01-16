@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="fixed bug">
-      <change afterPath="$PROJECT_DIR$/solution.txt" afterDir="false" />
+    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="changed to three solutions">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch/bbw/TravelingSalesmanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,7 @@
       <recent name="C:\Users\norwi\OneDrive - bbw.ch\Documents\Berufsfachschule\M411\Workspace\TravelingSalesman\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.bbw.Main" />
       <module name="TravelingSalesman" />
@@ -86,9 +89,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TravelingSalesmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TravelingSalesman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.TravelingSalesmanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelingSalesmanTest.testAlgorithm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TravelingSalesman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.TravelingSalesmanTest" />
+      <option name="METHOD_NAME" value="testAlgorithm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelingSalesmanTest.testDistanceToCity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TravelingSalesman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.TravelingSalesmanTest" />
+      <option name="METHOD_NAME" value="testDistanceToCity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelingSalesmanTest.testGetDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TravelingSalesman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.TravelingSalesmanTest" />
+      <option name="METHOD_NAME" value="testGetDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TravelingSalesmanTest" />
+        <item itemvalue="JUnit.TravelingSalesmanTest.testDistanceToCity" />
+        <item itemvalue="JUnit.TravelingSalesmanTest.testAlgorithm" />
+        <item itemvalue="JUnit.TravelingSalesmanTest.testGetDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +175,10 @@
       <workItem from="1671460279524" duration="4445000" />
       <workItem from="1673246301487" duration="85000" />
       <workItem from="1673246473988" duration="22000" />
-      <workItem from="1673246518010" duration="4943000" />
+      <workItem from="1673246518010" duration="4999000" />
+      <workItem from="1673275301250" duration="45000" />
+      <workItem from="1673850803360" duration="23000" />
+      <workItem from="1673850858582" duration="5291000" />
     </task>
     <task id="LOCAL-00001" summary="changed data structure to coordinates">
       <created>1673250043908</created>
@@ -121,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673251286913</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added file writer">
+      <created>1673251494662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673251494662</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +212,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="changed data structure to coordinates" />
     <MESSAGE value="fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
+    <MESSAGE value="added file writer" />
+    <MESSAGE value="changed to three solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to three solutions" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

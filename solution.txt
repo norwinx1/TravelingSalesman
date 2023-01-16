@@ -1,1 +1,9 @@
-[1 Zürich [1, 1], 7 Arosa [400, 105], 2 Berlin [1000, 1000], 3 Spandau [908, 977], 6 Magadino-Vira [320, 270], 4 Winterthur [50, 100], 5 Lufingen [75, 13]]
+Distance: 2930
+[1 Zürich [1, 1], 4 Winterthur [50, 100], 6 Magadino-Vira [320, 270], 3 Spandau [908, 977], 2 Berlin [1000, 1000], 7 Arosa [400, 105], 5 Lufingen [75, 13]]
+
+Distance: 2930
+[1 Zürich [1, 1], 4 Winterthur [50, 100], 6 Magadino-Vira [320, 270], 3 Spandau [908, 977], 2 Berlin [1000, 1000], 7 Arosa [400, 105], 5 Lufingen [75, 13]]
+
+Distance: 2930
+[1 Zürich [1, 1], 4 Winterthur [50, 100], 6 Magadino-Vira [320, 270], 3 Spandau [908, 977], 2 Berlin [1000, 1000], 7 Arosa [400, 105], 5 Lufingen [75, 13]]
+

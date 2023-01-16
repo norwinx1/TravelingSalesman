@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
@@ -18,12 +19,15 @@ public class Main {
         ArrayList<City> cities = new Gson().fromJson(fileReader, listType);
         cities.forEach(x -> System.out.println(x.toString()));
 
-        Travel solution1 = TravelingSalesman.calculateThreeShortestRoutes(1, cities);
-        System.out.println(solution1);
+        LinkedList<Travel> solutions = TravelingSalesman.calculateThreeShortestRoutes(1, cities);
+        System.out.println(solutions);
 
         try {
             FileWriter myWriter = new FileWriter("solution.txt");
-            myWriter.write(solution1.toString());
+            for (Travel travel : solutions) {
+                myWriter.write("Distance: " + travel.getDistance() + "\n");
+                myWriter.write(travel + "\n\n");
+            }
             myWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
