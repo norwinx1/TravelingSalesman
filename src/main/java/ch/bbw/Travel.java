@@ -51,4 +51,9 @@ public class Travel {
     public String toString() {
         return travel.toString();
     }
+
+    @Override
+    public Travel clone() {
+        return new Travel(new ArrayList<>(this.travel));
+    }
 }
