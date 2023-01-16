@@ -1,0 +1,143 @@
+[
+  {
+    "travel": [
+      {
+        "id": 1,
+        "name": "Zürich",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "id": 7,
+        "name": "Arosa",
+        "x": 400,
+        "y": 105
+      },
+      {
+        "id": 3,
+        "name": "Spandau",
+        "x": 908,
+        "y": 977
+      },
+      {
+        "id": 2,
+        "name": "Berlin",
+        "x": 1000,
+        "y": 1000
+      },
+      {
+        "id": 6,
+        "name": "Magadino-Vira",
+        "x": 320,
+        "y": 270
+      },
+      {
+        "id": 4,
+        "name": "Winterthur",
+        "x": 50,
+        "y": 100
+      },
+      {
+        "id": 5,
+        "name": "Lufingen",
+        "x": 75,
+        "y": 13
+      }
+    ],
+    "previousTravel": []
+  },
+  {
+    "travel": [
+      {
+        "id": 1,
+        "name": "Zürich",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "id": 7,
+        "name": "Arosa",
+        "x": 400,
+        "y": 105
+      },
+      {
+        "id": 2,
+        "name": "Berlin",
+        "x": 1000,
+        "y": 1000
+      },
+      {
+        "id": 3,
+        "name": "Spandau",
+        "x": 908,
+        "y": 977
+      },
+      {
+        "id": 6,
+        "name": "Magadino-Vira",
+        "x": 320,
+        "y": 270
+      },
+      {
+        "id": 4,
+        "name": "Winterthur",
+        "x": 50,
+        "y": 100
+      },
+      {
+        "id": 5,
+        "name": "Lufingen",
+        "x": 75,
+        "y": 13
+      }
+    ],
+    "previousTravel": []
+  },
+  {
+    "travel": [
+      {
+        "id": 1,
+        "name": "Zürich",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "id": 4,
+        "name": "Winterthur",
+        "x": 50,
+        "y": 100
+      },
+      {
+        "id": 6,
+        "name": "Magadino-Vira",
+        "x": 320,
+        "y": 270
+      },
+      {
+        "id": 3,
+        "name": "Spandau",
+        "x": 908,
+        "y": 977
+      },
+      {
+        "id": 2,
+        "name": "Berlin",
+        "x": 1000,
+        "y": 1000
+      },
+      {
+        "id": 7,
+        "name": "Arosa",
+        "x": 400,
+        "y": 105
+      },
+      {
+        "id": 5,
+        "name": "Lufingen",
+        "x": 75,
+        "y": 13
+      }
+    ],
+    "previousTravel": []
+  }
+]

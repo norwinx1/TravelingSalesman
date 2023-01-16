@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="changed to three solutions">
+    <list default="true" id="89e33517-13de-4445-b81f-7aeec60469e7" name="Changes" comment="fixed bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/Travel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/TravelingSalesman.java" afterDir="false" />
@@ -72,6 +71,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\norwi\OneDrive - bbw.ch\Documents\Berufsfachschule\M411\Workspace\TravelingSalesman" />
       <recent name="C:\Users\norwi\OneDrive - bbw.ch\Documents\Berufsfachschule\M411\Workspace\TravelingSalesman\src\main\resources" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="ch.bbw.TravelingSalesman" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -178,7 +180,7 @@
       <workItem from="1673275301250" duration="45000" />
       <workItem from="1673850803360" duration="23000" />
       <workItem from="1673850858582" duration="5681000" />
-      <workItem from="1673864001838" duration="809000" />
+      <workItem from="1673864001838" duration="3040000" />
     </task>
     <task id="LOCAL-00001" summary="changed data structure to coordinates">
       <created>1673250043908</created>
@@ -208,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673856172499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed bug">
+      <created>1673864979507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673864979507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,10 +227,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="changed data structure to coordinates" />
-    <MESSAGE value="fixed bug" />
     <MESSAGE value="added file writer" />
     <MESSAGE value="changed to three solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to three solutions" />
+    <MESSAGE value="fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
