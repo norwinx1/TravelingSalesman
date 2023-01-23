@@ -1,21 +1,19 @@
 package ch.bbw;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Travel {
     private ArrayList<City> travel;
     private ArrayList<City> previousTravel = new ArrayList<>();
+    private final Random random = new Random();
 
     public Travel(ArrayList<City> cities) {
         travel = cities;
     }
 
     private int generateRandomIndex() {
-        int r = 0;
-        while (r == 0) {
-            r = (int) (Math.random() * travel.size());
-        }
-        return r;
+        return random.nextInt(1, travel.size());
     }
 
     /**
@@ -42,7 +40,7 @@ public class Travel {
      * Calculates the complete distance of this travel
      * @return the distance from <code>cities[0]</code> to <code>cities[cities.size()-1]</code>
      */
-    public int getDistance() {
+    public int determineDistance() {
         int distance = 0;
         for (int index = 0; index < travel.size(); index++) {
             City starting = travel.get(index);

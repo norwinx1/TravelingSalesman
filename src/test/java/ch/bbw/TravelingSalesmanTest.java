@@ -22,7 +22,7 @@ public class TravelingSalesmanTest {
         City arosa = new City(2, "Arosa", 400, 105);
         ArrayList<City> cities = new ArrayList<>(List.of(zurich, arosa));
         Travel travel = new Travel(cities);
-        Assertions.assertEquals(824, travel.getDistance());
+        Assertions.assertEquals(824, travel.determineDistance());
     }
 
 }

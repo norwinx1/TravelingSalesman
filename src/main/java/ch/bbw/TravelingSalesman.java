@@ -33,13 +33,13 @@ public class TravelingSalesman {
     public static List<Travel> simulateAnnealing(int iterations, double rate) {
         double t = 10;
         Travel travel = new Travel(cities);
-        double bestDistance = travel.getDistance();
+        double bestDistance = travel.determineDistance();
         Set<Travel> bestTravels = new HashSet<>();
 
         for (int i = 0; i < iterations; i++) {
             if (t > 0.1) {
                 travel.swapCities();
-                double currentDistance = travel.getDistance();
+                double currentDistance = travel.determineDistance();
                 if (currentDistance < bestDistance) {
                     bestDistance = currentDistance;
                     bestTravels.add(travel.clone());
@@ -53,6 +53,6 @@ public class TravelingSalesman {
         }
 
         System.out.println("Best distance of travel: " + bestDistance + " with route: " + travel);
-        return bestTravels.stream().sorted(Comparator.comparing(Travel::getDistance)).limit(3).collect(Collectors.toList());
+        return bestTravels.stream().sorted(Comparator.comparing(Travel::determineDistance)).limit(3).collect(Collectors.toList());
     }
 }

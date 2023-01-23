@@ -33,8 +33,7 @@ public class Main {
         try {
             FileWriter myWriter = new FileWriter(TARGET_FILE);
             for (Travel travel : solutions) {
-                new Gson().toJson(travel);
-                myWriter.write("Distance: " + travel.getDistance() + "\n");
+                myWriter.write("Distance: " + travel.determineDistance() + "\n");
                 myWriter.write(travel + "\n\n");
             }
             myWriter.close();
