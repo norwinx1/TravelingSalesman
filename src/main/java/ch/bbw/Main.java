@@ -12,8 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    final static String SOURCE_FILE = "data.json";
-    final static String TARGET_FILE = "solution.txt";
+    private static final String SOURCE_FILE = "data.json";
+    private static final String TARGET_FILE = "solution.txt";
+    private static final int START_ID = 1;
 
     public static void main(String[] args) throws FileNotFoundException {
         //Read data file
@@ -25,7 +26,8 @@ public class Main {
         cities.forEach(x -> System.out.println(x.toString()));
 
         //Use algorithm to determine the shortest routes
-        List<Travel> solutions = TravelingSalesman.calculateThreeShortestRoutes(1, cities);
+        List<Travel> solutions = TravelingSalesman.calculateThreeShortestRoutes(START_ID, cities);
+        System.out.println("See generated file for more solutions");
 
         //Write the solutions to the file
         try {
