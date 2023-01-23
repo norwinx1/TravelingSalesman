@@ -9,12 +9,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Set;
+import java.util.List;
 
 public class Main {
+    final static String SOURCE_FILE = "test.json";
+    final static String TARGET_FILE = "solution.txt";
+
     public static void main(String[] args) throws FileNotFoundException {
         //Read data file
-        FileReader fileReader = new FileReader("data.json");
+        FileReader fileReader = new FileReader(SOURCE_FILE);
         Type listType = new TypeToken<ArrayList<City>>() {
         }.getType();
         Gson gson = new Gson();
@@ -22,17 +25,16 @@ public class Main {
         cities.forEach(x -> System.out.println(x.toString()));
 
         //Use algorithm to determine the shortest routes
-        Set<Travel> solutions = TravelingSalesman.calculateThreeShortestRoutes(1, cities);
+        List<Travel> solutions = TravelingSalesman.calculateThreeShortestRoutes(1, cities);
 
         //Write the solutions to the file
         try {
-            FileWriter myWriter = new FileWriter("solution.json");
-            myWriter.write(gson.toJson(solutions));
-//            for (Travel travel : solutions) {
-//                new Gson().toJson(travel);
-//                myWriter.write("Distance: " + travel.getDistance() + "\n");
-//                myWriter.write(travel + "\n\n");
-//            }
+            FileWriter myWriter = new FileWriter(TARGET_FILE);
+            for (Travel travel : solutions) {
+                new Gson().toJson(travel);
+                myWriter.write("Distance: " + travel.getDistance() + "\n");
+                myWriter.write(travel + "\n\n");
+            }
             myWriter.close();
         } catch (IOException e) {
             e.printStackTrace();

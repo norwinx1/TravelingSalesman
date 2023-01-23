@@ -1,9 +1,6 @@
 package ch.bbw;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class TravelingSalesman {
@@ -17,7 +14,7 @@ public class TravelingSalesman {
      * @param cityList all cities with names and coordinates
      * @return the three shortest routes (backward routes not included)
      */
-    public static Set<Travel> calculateThreeShortestRoutes(int startId, ArrayList<City> cityList) {
+    public static List<Travel> calculateThreeShortestRoutes(int startId, ArrayList<City> cityList) {
         //Move startCity to index 0
         City startCity = cityList.stream().filter(x -> x.getId() == startId).findFirst().get();
         cityList.removeIf(x -> x.getId() == startId);
@@ -33,7 +30,7 @@ public class TravelingSalesman {
      * @param rate how accurately the algorithm should optimize
      * @return the three shortest routes (backward routes not included)
      */
-    public static Set<Travel> simulateAnnealing(int iterations, double rate) {
+    public static List<Travel> simulateAnnealing(int iterations, double rate) {
         double t = 10;
         Travel travel = new Travel(cities);
         double bestDistance = travel.getDistance();
@@ -56,6 +53,6 @@ public class TravelingSalesman {
         }
 
         System.out.println("Best distance of travel: " + bestDistance + " with route: " + travel);
-        return bestTravels.stream().sorted(Comparator.comparing(Travel::getDistance)).limit(3).collect(Collectors.toSet());
+        return bestTravels.stream().sorted(Comparator.comparing(Travel::getDistance)).limit(3).collect(Collectors.toList());
     }
 }
