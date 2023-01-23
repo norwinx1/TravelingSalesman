@@ -9,10 +9,10 @@ public class TravelingSalesman {
     private static ArrayList<City> cities;
 
     /**
-     * Calculates the three shortest routes it could find with the optimizing algorithm
+     * Calculates the three shortest routes it could find with the optimizing algorithm. Not completely consistent due to finding backward routes and random indexing.
      * @param startId the id of the city from where to start the journey
      * @param cityList all cities with names and coordinates
-     * @return the three shortest routes (backward routes not included)
+     * @return the three shortest routes (backward routes not separately included)
      */
     public static List<Travel> calculateThreeShortestRoutes(int startId, ArrayList<City> cityList) {
         //Move startCity to index 0

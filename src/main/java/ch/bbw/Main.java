@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    final static String SOURCE_FILE = "test.json";
+    final static String SOURCE_FILE = "data.json";
     final static String TARGET_FILE = "solution.txt";
 
     public static void main(String[] args) throws FileNotFoundException {
